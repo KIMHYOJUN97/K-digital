@@ -10,14 +10,14 @@
     if (request.getMethod().equals("post")) request.setCharacterEncoding("UTF-8");
 %>
 
-<jsp:useBean id = "stduent" class="model.StudentDO" />
-<jsp:useBean id="studentDAO" class="model.StudentDAO"/>
+<jsp:useBean id = "stduent" class="com.example.homework2.model.StudentDO" />
+<jsp:useBean id="studentDAO" class="com.example.homework2.model.StudentDAO"/>
 <jsp:setProperty name="stduent" property="*"/>
 <%
     String viewPATH = "/WEB-INF/views/";
     String step = request.getParameter("step");
     String selecting = request.getParameter("selecting");
-    String changing = request.getParameter()
+    String changing = request.getParameter("changing");
     if (request.getMethod().equals("get")) {
         pageContext.forward(viewPATH+"initPage.jsp");
     }
@@ -32,8 +32,6 @@
             } else if (step.equals("4. 학생 정보 삭제")) {
                 pageContext.forward(viewPATH + "/delete/delete.jsp");
             }
-
-            if()
         }
     }
 %>

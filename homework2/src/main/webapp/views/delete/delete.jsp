@@ -1,4 +1,4 @@
-<%@ page import="model.StudentDO" %><%--
+<%@ page import="com.example.homework2.model.StudentDO" %><%--
   Created by IntelliJ IDEA.
   User: gimhyojun
   Date: 2023/03/09

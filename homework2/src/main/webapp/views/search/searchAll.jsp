@@ -1,4 +1,4 @@
-<%@ page import="model.StudentDO" %>
+<%@ page import="com.example.homework2.model.StudentDO" %>
 <%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: gimhyojun
