@@ -5,12 +5,14 @@ import cbg.chap04.exception.DuplicateMemberException;
 import cbg.chap04.exception.MemberNotFoundException;
 import cbg.chap04.exception.WrongIdPasswordException;
 import cbg.chap04.model.*;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+@SpringBootApplication
 public class MainForSpring {
     private static AnnotationConfigApplicationContext context =
             new AnnotationConfigApplicationContext(AppContext.class);

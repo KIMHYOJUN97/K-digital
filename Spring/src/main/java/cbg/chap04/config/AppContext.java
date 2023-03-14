@@ -5,6 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import java.time.format.DateTimeFormatter;
+
 @Configuration
 public class AppContext {
 
@@ -68,5 +70,10 @@ public class AppContext {
         versionPrinter.setMajorVersion(5);
         versionPrinter.setMinorVersion(0);
         return versionPrinter;
+    }
+
+    @Bean
+    public DateTimeFormatter dateTimeFormatter() {
+        return DateTimeFormatter.ofPattern("yyyy년 MM월 dd일");
     }
 }
